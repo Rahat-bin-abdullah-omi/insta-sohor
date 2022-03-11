@@ -54,6 +54,52 @@
             <h1>Reported posts</h1>
         </div>
     </main>
+    <section>
+        <article class="m-4">
+            <h3>How does Javascript work?</h3>
+            <p> <span> <b>Ans:</b> </span> Javascript is an interpreted, just-in-time compiled high level language. It's single threaded that means it can perform one task at a time. Javascript script run through Javascript engine. Different browsers have
+                different engines like V8 developed by Google, spider monkey by Mozila etc. We run Javascript in the browsers or using Node.js. When javascript runs inside a browser, the browser first load the page and browsers have their own interpreter
+                to run the code. Javascript engine has two parts-- the call stack and the memory heap. After that it parse the code to make AST (abstract sytax tree). The compiler converts AST into byte code and after that the execution happens in the
+                call stack. JavaScript is mainly used for web-based applications and web browsers. But JavaScript is also used beyond the Web in software, servers and embedded hardware controls.
+            </p>
+        </article>
+        <article class="m-4">
+            <h3>What does Javascript eventloop do?</h3>
+            <p><span> <b>Ans:</b> </span>The eventloop is an amazing feature of Javascript. This is where asynchronus magic happens. By nature javascript synchronusly executes all of it's program, and it isn't good for performance because it's blocking the
+                way of executing other lines until the current line is being executed. To make the program more efficient and make better user experience, javascript has a feature name eventloop. When Js interpreter recognizes functions like setTimeOut
+                or addEventListner('load', function()) that will take some time to execute, Js interpreter sends them to web api and executes the next lines of the call stack. When the call back functions, eg. setTimeOut, are ready the web api send them
+                off to call back queue and the magical eventloop pass them into the call stack for execution.</p>
+        </article>
+        <article>
+            <h3>What is the difference between Local Storage and Session Storage</h3>
+            <table class="table table-dark">
+                <thead>
+
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+
+                        <td colspan="2" class="table-active"> <b>Local Storage</b>
+                            <p>1. Data doesn't exipire after a session ends.</p>
+                            <p>2. Data doesn't disapper until the user deletes it.</p>
+                            <p>3. Sometimes harmful for security issues.</p>
+                        </td>
+                        <td> <b>Session Storage</b>
+                            <p>1. Data disappears after a session ends.</p>
+                            <p>2. Each new tab creates a new session for the same URL.</p>
+                            <p>3. If a tab is copied to a new tab the session storage is also copied.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
     <footer></footer>
 
     <!-- add javascript  file  -->
